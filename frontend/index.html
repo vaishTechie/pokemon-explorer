@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+
+    <div class="container">
+      <header>
+        <h1>Pokemon Explorer</h1>
+        <p class="subtitle">Comprehensive Pokemon Database</p>
+      </header>
+
+      <div class="search-section">
+        <div class="search-box">
+          <input
+            type="text"
+            id="pokemonName"
+            placeholder="Enter Pokemon name or ID"
+          />
+          <button id="searchBtn" class="btn-primary">Search</button>
+          <button id="randomBtn" class="btn-secondary">Random</button>
+        </div>
+      </div>
+
+      <div id="loading" class="loading" style="display: none">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+      </div>
+
+      <div id="error" class="error-message"></div>
+      <div id="result"></div>
+
+      <div class="bottom-sections">
+        <div class="section-card">
+          <h3>Recent Searches</h3>
+          <ul id="recentList" class="list"></ul>
+        </div>
+
+        <div class="section-card">
+          <h3>Favorites</h3>
+          <ul id="favList" class="list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
