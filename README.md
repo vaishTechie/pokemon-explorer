@@ -22,3 +22,6 @@ A full-stack Pokemon search engine that allows users to search for Pokemon and v
 cd backend
 npm install
 npm start
+
+### Frontend
+Open index.html file but make sure before opening your server is running
